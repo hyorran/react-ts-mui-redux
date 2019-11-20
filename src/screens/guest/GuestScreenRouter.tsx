@@ -1,9 +1,9 @@
 import React from 'react'
-import RouterSwitch from '../../components/RouterSwitch'
-import withLayout from '../../layouts'
 import get from 'lodash/get'
-import routes from '../../routes/guest'
+import RouterSwitch from '../../components/RouterSwitch/Index'
+import withLayout from '../../layouts/Index'
+import routes from '../../routes/Guest'
 
-const GuestScreenRouter = (props: object) => <RouterSwitch escapeTo={get(props, 'espaceTo')} routes={ routes } { ...props } />
+const GuestScreenRouter: React.FC = (props: object) => <RouterSwitch escapeTo={get(props, 'espaceTo')} routes={ routes } { ...props } />
 
 export default withLayout('guest')(GuestScreenRouter)

@@ -1,6 +1,6 @@
 import { lazy } from 'react'
 
-const ScreenDefault = lazy(() => import('../screens/guest/ScreenDefault'))
+const ScreenDefault = lazy(() => import('../screens/guest/ScreenDefault/Index'))
 
 const routes = {
   home: {

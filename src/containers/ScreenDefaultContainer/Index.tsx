@@ -1,10 +1,6 @@
 import * as React from 'react'
 
-export interface IScreenDefaultContainerProps {
-
-}
-
-const ScreenDefaultContainer = (props: IScreenDefaultContainerProps) => {
+const ScreenDefaultContainer: React.ReactNode = () => {
   return (
     <div>
       <h1>teste</h1>

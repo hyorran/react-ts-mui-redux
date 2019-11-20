@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import ScreenRouter from './screens/ScreenRouter'
 
 const App: React.FC = () => {
@@ -7,4 +7,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default App

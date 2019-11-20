@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-export interface IGuestLayoutProps {
+export interface GuestLayoutProps {
   children: React.ReactNode
 }
 
-const GuestLayout = (props: IGuestLayoutProps) => {
+const GuestLayout: React.ReactNode = (props: GuestLayoutProps) => {
   const {
     children
   } = props

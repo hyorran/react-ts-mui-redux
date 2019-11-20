@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react'
 import { withRouter } from 'react-router-dom'
 
-import GuestLayout from './GuestLayout'
+import GuestLayout from './GuestLayout/Index'
 
-const withLayout = (nextLayout: String) => (ScreenRouter: React.FC) => {
-  let LayoutComponent: any
+const withLayout: React.ReactNode  = (nextLayout: string) => (ScreenRouter: React.FC) => {
+  let LayoutComponent: React.ReactNode
 
   switch (nextLayout) {
     case 'guest':
@@ -15,7 +15,7 @@ const withLayout = (nextLayout: String) => (ScreenRouter: React.FC) => {
       break
   }
 
-  const wrapped = (props: object) => (
+  const wrapped: React.FC = (props: object) => (
     <Suspense fallback={ <div /> }>
       <LayoutComponent { ...props }>
         <ScreenRouter { ...props } />
