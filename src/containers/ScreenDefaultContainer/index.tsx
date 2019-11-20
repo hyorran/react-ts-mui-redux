@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const ScreenDefaultContainer: React.ReactNode = () => {
+const ScreenDefaultContainer: React.FC = () => {
   return (
     <div>
       <h1>teste</h1>

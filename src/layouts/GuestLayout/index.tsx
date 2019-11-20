@@ -1,10 +1,10 @@
 import * as React from 'react'
 
 export interface GuestLayoutProps {
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
-const GuestLayout: React.ReactNode = (props: GuestLayoutProps) => {
+const GuestLayout: React.FC = (props: GuestLayoutProps) => {
   const {
     children
   } = props

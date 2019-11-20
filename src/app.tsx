@@ -1,5 +1,5 @@
 import React from 'react'
-import ScreenRouter from './screens/ScreenRouter'
+import ScreenRouter from './screens/screen-router'
 
 const App: React.FC = () => {
   return (

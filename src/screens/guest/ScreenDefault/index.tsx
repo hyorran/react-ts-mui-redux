@@ -1,5 +1,5 @@
 import React from 'react'
-import ScreenDefaultContainer from '../../../containers/ScreenDefaultContainer/Index'
+import ScreenDefaultContainer from '../../../containers/ScreenDefaultContainer'
 
 const ScreenDefault: React.FC = (props: object) => <ScreenDefaultContainer { ...props } />
 

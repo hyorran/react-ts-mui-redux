@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react'
 import { withRouter } from 'react-router-dom'
 
-import GuestLayout from './GuestLayout/Index'
+import GuestLayout from './GuestLayout'
 
-const withLayout: React.ReactNode  = (nextLayout: string) => (ScreenRouter: React.FC) => {
-  let LayoutComponent: React.ReactNode
+const withLayout: Function = (nextLayout: string) => (ScreenRouter: React.FC) => {
+  let LayoutComponent: React.FC
 
   switch (nextLayout) {
     case 'guest':
