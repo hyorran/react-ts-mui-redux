@@ -4,6 +4,6 @@ import RouterSwitch from '../../components/RouterSwitch'
 import withLayout from '../../layouts'
 import routes from '../../routes/guest'
 
-const GuestScreenRouter: React.FC = (props: object) => <RouterSwitch escapeTo={get(props, 'espaceTo')} routes={ routes } { ...props } />
+const GuestScreenRouter: React.FC = (props: object) => <RouterSwitch escapeTo={get(props, 'escapeTo')} routes={ routes } { ...props } />
 
 export default withLayout('guest')(GuestScreenRouter)
