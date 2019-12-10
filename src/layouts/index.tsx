@@ -1,5 +1,5 @@
-import React, { Suspense } from 'react'
-import { withRouter } from 'react-router-dom'
+import React, {Suspense} from 'react'
+import {withRouter} from 'react-router-dom'
 
 import GuestLayout from './GuestLayout'
 
@@ -15,10 +15,10 @@ const withLayout: Function = (nextLayout: string) => (ScreenRouter: React.FC) =>
       break
   }
 
-  const wrapped: React.FC = (props: object) => (
+  const wrapped: React.FC = () => (
     <Suspense fallback={ <div /> }>
-      <LayoutComponent { ...props }>
-        <ScreenRouter { ...props } />
+      <LayoutComponent>
+        <ScreenRouter />
       </LayoutComponent>
     </Suspense>
   )

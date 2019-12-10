@@ -47,6 +47,7 @@ module.exports = {
       { functions: false, classes: true, variables: true, typedefs: true },
     ],
     // Common abbreviations are known and readable
-    "unicorn/prevent-abbreviations": "off"
+    "unicorn/prevent-abbreviations": "off",
+    "react/jsx-prop-no-spreading": "off",
   },
 }

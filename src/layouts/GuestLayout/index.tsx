@@ -8,6 +8,7 @@ const GuestLayout: React.FC = (props: GuestLayoutProps) => {
   const {
     children
   } = props
+
   return (
     <div>
       <h1>layout</h1>
