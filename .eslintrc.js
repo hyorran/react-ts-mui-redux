@@ -17,6 +17,13 @@ module.exports = {
     "prettier/react",
     "prettier/@typescript-eslint",
   ],
+  settings: {
+    "import/resolver": {
+      node: {
+        paths: ["src"]
+      }
+    }
+  },
   env: {
     node: true,
     browser: true,

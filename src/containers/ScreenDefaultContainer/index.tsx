@@ -1,9 +1,10 @@
 import * as React from 'react'
+import Typography from '@material-ui/core/Typography'
 
 const ScreenDefaultContainer: React.FC = () => {
   return (
     <div>
-      <h1>teste</h1>
+      <Typography color="primary">teste</Typography>
     </div>
   )
 }
